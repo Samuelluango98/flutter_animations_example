@@ -1,6 +1,6 @@
 import 'package:animations_example/utils/screen_size.dart';
-import 'package:animations_example/widgets/explicit_animation.dart';
-import 'package:animations_example/widgets/implicit_animation.dart';
+import 'package:animations_example/widgets/animated_button.dart';
+import 'package:animations_example/widgets/animated_container.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -26,7 +26,9 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             _buildTabs(),
             SizedBox(height: ScreenSize.height * 0.1),
-            isImplicit ? const ImplicitAnimation() : const ExplicitAnimation(),
+            isImplicit
+                ? const AnimatedContainerWidget()
+                : const AnimatedButtonWidget(),
           ],
         ),
       ),
