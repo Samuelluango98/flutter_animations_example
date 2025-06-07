@@ -84,9 +84,9 @@ class _AnimatedButtonState extends State<AnimatedButton>
           alignment: Alignment.center,
           children: [
             Container(
-              height: ScreenSize.height * 0.06,
               width: ScreenSize.width * 0.6,
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 12),
+              height: ScreenSize.height * 0.05,
+              padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(12),
                 gradient: const LinearGradient(
@@ -102,12 +102,12 @@ class _AnimatedButtonState extends State<AnimatedButton>
                   ),
                 ],
               ),
-              child: const Center(
+              child: Center(
                 child: Text(
                   'Tap or Hold',
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 18,
+                    fontSize: ScreenSize.width * 0.042,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -118,7 +118,7 @@ class _AnimatedButtonState extends State<AnimatedButton>
               builder: (_, __) {
                 return Container(
                   width: (ScreenSize.width * 0.6) * _sizeController.value,
-                  height: ScreenSize.height * 0.06,
+                  height: ScreenSize.height * 0.05,
                   decoration: BoxDecoration(
                     color: Colors.black.withValues(alpha: 0.12),
                     borderRadius: BorderRadius.circular(10),

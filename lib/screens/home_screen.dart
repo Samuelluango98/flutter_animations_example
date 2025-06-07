@@ -89,7 +89,7 @@ class _HomeScreenState extends State<HomeScreen> {
         '✨ Flutter Animations ✨',
         textAlign: TextAlign.center,
         style: TextStyle(
-          fontSize: ScreenSize.width * 0.07,
+          fontSize: ScreenSize.width * 0.065,
           fontWeight: FontWeight.bold,
           color: AppColors.primary,
           shadows: const [
